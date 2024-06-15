@@ -1,0 +1,50 @@
+Requerimentos do trabalho e oq estou construindo 
+
+Restrição:
+
+• Nenhuma biblioteca externa do Java
+• todo elemento do jogo deve ser Cartas ou Tabuleiros. Tento subclasses destas para serem utilizados no game
+• todo codigo trazido da net deve ser devidamente indicado ou comentado, qualquer coisa copiada sera considerada plagio.
+
+Requerimentos: 
+
+tela de pause --
+
+• Iniciar novo jogo 
+• Carregar partida de um arquivo
+• salvar partida em um arquivo 
+• voltar para o jogo
+• voltar ao menu principal e
+• sair do jogo 
+
+Classes e objetos ---
+
+•• toda a logica do jogo deve ser modelada atraves de classes 
+•• todas as classes que estao associadas a logica do jogo devem estar em um pacote chamado backend. caso o aluno deseje criar mais pacotes para melhor organizar devem estar dentro do backend
+•• todas as classes associadas com interacao com o usuario devem estar em um pacote chamado frontend. caso o aluno deseje criar mais pacotes para melhor organizar, estes devem estar dentro do backend
+•• o backend do jogo deve conter formas de:
++++ armazenar e representar o tabuleiro
++++ armazenar e representar cartas
++++ alterar o estado do jogo de acordo com as jogadas
++++ checar se o jogo terminou
++++ checar qual jogador venceu (ou se o Comput venceu)
+
+•• e dever do frontend pedir entradas e mostrar no console os menus, estado atual do jogo, mensagens e erro, etc
+
+Arquivos:
+
+• o menu principal deve conter opcoes que viabilizem a execucao de uma nova partida ou continuar a partir de um salva anteriormente.
+• o jogo deve ser salvo automaticamente (em arquivo proprio para este) ap´os cada jogada do(s)
+jogador(es).
+• Deve existir a op¸c˜ao do jogador criar um novo save permanente em outro arquivo na Tela de
+Pause do jogo.
+• Deve existir a op¸c˜ao do jogador carregar uma partida salva anteriormente em arquivo pr´oprio ou
+do arquivo de save autom´atico na Tela de Pause e no Menu Principal.
+Tratamento de exce¸c˜oes
+• Nenhuma exce¸c˜ao pode aparecer para o usu´ario. Todos as poss´ıveis exce¸c˜oes devem ser
+devidamente tratadas (com try-catch), enviando uma mensagem para o usu´ario caso necess´ario
+(ex. Jogada inv´alida), resolvendo sem a necessidade de avisar o usu´ario, se poss´ıvel, ou avisando
+sobre um erro fatal, e como corrigi-lo (ex. arquivo selecionado n˜ao existe).
+• Os m´etodos do backend do jogo devem levantar exce¸c˜oes (utilizando throw) conforme vimos em
+aula (ex. m´etodo que faz a jogada passada deve levantar erro se receber uma jogada inv´alida).
+E dever dos m´etodos e classes do frontend com usu´ario tratar esses erros

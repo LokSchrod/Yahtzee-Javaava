@@ -1,0 +1,47 @@
+Job requirements and what I'm building 
+
+Restriction:
+
+• No external Java libraries
+• every element of the game must be Cards or Boards. I try subclasses of these to be used in the game
+• all code brought from the internet must be properly indicated or commented, anything copied will be considered plagiarism.
+
+Requirements: 
+
+pause screen --
+
+• Start new game 
+• Load match from a file
+• save match to a file 
+• return to the game
+• return to the main menu and
+• leave the game 
+
+Classes and objects ---
+
+•• all game logic must be modeled through classes 
+•• all classes that are associated with the game logic must be in a package called backend. If the student wishes to create more packages to better organize them, they must be within the backend
+•• all classes associated with user interaction must be in a package called frontend. If the student wishes to create more packages to better organize, these must be within the backend
+•• the game backend must contain ways to:
++++ store and represent the board
++++ store and represent letters
++++ change the game state according to moves
++++ check if the game is finished
++++ check which player won (or if Comput won)
+•• It is the frontend's duty to request input and display menus, current game status, messages and errors, etc. on the console
+Files:
+• the main menu must contain options that allow you to play a new game or continue from a previous save.
+• the game must be automatically saved (in its own file) after each play of the player(s)
+player(s).
+• There must be the option for the player to create a new permanent save in another file on the Game Screen
+Pause the game.
+• There must be the option for the player to load a game previously saved in their own file or
+of the automatic save file on the Pause Screen and Main Menu.
+Exception handling
+• No exceptions can appear to the user. All possible exceptions must be
+properly handled (with try-catch), sending a message to the user if necessary
+(e.g. Invalid play), resolving without the need to notify the user, if possible, or warning
+about a fatal error, and how to correct it (e.g. selected file does not exist).
+• The game's backend methods must raise exceptions (using throw) as we saw in
+class (e.g. method that makes the last move should raise an error if it receives an invalid move).
+It is the duty of frontend methods and classes with the user to handle these errors
